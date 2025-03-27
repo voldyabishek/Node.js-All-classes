@@ -14,11 +14,11 @@
   /*console.log(__dirname)
   console.log(__filename)*/
 
- /* const path=require("path")
-  console.log(path.dirname(__filename))
-  console.log(path.basename(__filename))
-  console.log(path.extname(__filename))
-  console.log(path.parse(__filename))*/
+/*const path=require("path")
+     console.log(path.dirname(__filename))  // provide that folder name 
+     console.log(path.basename(__filename))  // provide exesting folder name 
+     console.log(path.extname(__filename)) //provide what extention used like js or html or css or jsx
+     console.log(path.parse(__filename))  ///provide full path detail*/
 
 
  /* const m=require('./math.js')
