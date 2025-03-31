@@ -91,5 +91,5 @@ fs.stat(filePath,(err,stats) =>{
     return;
   }
   console.log('File size (in bytes):',stats.size);
-  console.log('Last modified:',stats.mttime)
+  console.log('Last modified:',stats.mtime)
 });
