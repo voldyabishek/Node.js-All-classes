@@ -1,4 +1,4 @@
-//directory creation
+//1.directory creation
 //fs-file system, mkdir - make directory
 /* const fs = require('fs');
 fs.mkdir("abishek",(err)=>{
@@ -12,7 +12,7 @@ fs.mkdir("abishek",(err)=>{
 
 // <!--------------------!>
 
-//check the directory is created or not
+//2.check the directory is created or not
 /* const fs = require('fs');
 fs.readdir('./abishek',(err,files)=>{
     if(err){
@@ -25,7 +25,7 @@ fs.readdir('./abishek',(err,files)=>{
 
 // <!--------------------!>
 
- //check the files 
+ //3.check the files 
  /*  const fs = require('fs');
   const filePath ='./n.js';
   if(fs.existsSync(filePath)){
@@ -36,7 +36,7 @@ fs.readdir('./abishek',(err,files)=>{
   } */
 // <!--------------------!>
 
-    //Write and create a file
+    //4.Write and create a file
 /*      const fs =require('fs')
      const filepath ='n.js';
      const dataToWrite ='console.log("vanakam da maapala")';
@@ -49,7 +49,7 @@ fs.readdir('./abishek',(err,files)=>{
         console.log('Data has been written to the file.');
      }); */
 // <!--------------------!>
-   //File Reading  
+   //5.File Reading  
         /* const fs =require('fs')
         const filepath = 'n.js';
         const encoding = 'utf8';
@@ -68,7 +68,8 @@ fs.readdir('./abishek',(err,files)=>{
 
 // <!--------------------!>
 
-//file rename ---Like newfile.txt vanthu n.js nu irunthuchi keela ulla code ahh adicha antha file n.js la irunthu newfile.txt nu change aagidichi.
+//6.file rename ---Like newfile.txt vanthu n.js nu irunthuchi keela ulla code ahh adicha,
+//  antha file n.js la irunthu newfile.txt nu change aagidichi.
    /*  const fs = require('fs');
     const oldFilePath ='n.js';
     const newFilepath ='newfile.txt';
@@ -82,8 +83,8 @@ fs.readdir('./abishek',(err,files)=>{
 // <!--------------------!>
 
 
-//file edition date and time
-const fs = require('fs');
+//7.file edition date and time
+/* const fs = require('fs');
 const filePath = './newfile.txt';
 fs.stat(filePath,(err,stats) =>{
   if(err){
@@ -92,4 +93,45 @@ fs.stat(filePath,(err,stats) =>{
   }
   console.log('File size (in bytes):',stats.size);
   console.log('Last modified:',stats.mtime)
+}); */
+
+
+//8.deleting
+
+/* const {unlink}=require('fs')
+
+unlink('newfile.txt',(err)=>{
+  if(err){
+    console.error(err)
+    return;
+  }
+  console.log("file deleted succesfully")
 });
+ */
+/* <----------------------> */
+
+//example function but not neccesory
+      /*  function func(a,b,c){
+  console.log(a-b+c)
+}
+
+const a1=(a,b)=>{
+  c=a+b
+  console.log(c)
+}
+
+
+const print1=(a,b)=>{
+  console.log("********************************")
+  console.log("\tAddition")
+  console.log("********************************")
+  
+  console.log("\t",a)
+  console.log("\t",b)
+  console.log("********************************")
+  console.log("\t",a+b)
+
+}
+
+print1(78,56)  */
+
