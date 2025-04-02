@@ -20,3 +20,38 @@ writeStream.on('error', (err) => {
   console.error('Error writing to output.txt:', err);
 }); 
  
+
+//day.2-->retrive the last code due to normal output like ahh small letter
+
+/* const fs = require('fs');
+
+const readStream = fs.createReadStream('input.txt');
+const writeStream = fs.createWriteStream('output.txt');
+
+readStream.on('data', (chunk) => {
+  writeStream.write(chunk);
+});
+
+readStream.on('end', () => {
+  writeStream.end();
+});  
+
+
+ //for image re arrange
+
+
+const fs = require('fs');
+
+const readStream = fs.createReadStream('input.png');
+const writeStream = fs.createWriteStream('output.png');
+
+readStream.pipe(writeStream);
+
+writeStream.on('finish', () => {
+  console.log('Image copied successfully.');
+});
+
+writeStream.on('error', (err) => {
+  console.error('Error writing the image:', err);
+}); 
+ */
